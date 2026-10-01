@@ -72,6 +72,7 @@ public class SecurityConfig {
 
                             response.setStatus(401);
                             response.setContentType(MediaType.APPLICATION_JSON_VALUE);
+
                             response.getWriter().write(
                                     "{\"message\":\"Not authenticated. Please log in again.\"}"
                             );
@@ -81,6 +82,7 @@ public class SecurityConfig {
 
                             response.setStatus(403);
                             response.setContentType(MediaType.APPLICATION_JSON_VALUE);
+
                             response.getWriter().write(
                                     "{\"message\":\"Access denied.\"}"
                             );
@@ -99,7 +101,8 @@ public class SecurityConfig {
         configuration.setAllowedOrigins(
                 List.of(
                         "http://localhost:5173",
-                        "http://localhost:5174"
+                        "http://localhost:5174",
+                        "https://cryptotrack-frontend.vercel.app"
                 )
         );
 

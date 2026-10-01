@@ -1,0 +1,22 @@
+# Environment / secrets
+.env
+.env.*
+application-local.properties
+
+# Frontend is maintained in its own repository
+/frontend/
+
+
+# Build output
+/target/
+
+# IntelliJ
+/.idea/
+
+# Frontend is a separate repository
+/frontend/
+
+# Secrets
+.env
+.env.*
+application-local.properties
